@@ -298,7 +298,7 @@ li{
 }
 
 .worth p {
-  padding: 20px;
+  padding: 20px 200px;
 }
 /* Worth template end */
 
@@ -384,18 +384,22 @@ li{
 }
 
 .reason__block-detail {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   padding: 5px 0;
+}
+
+.reason__block-detail td{
+  padding: 5px
 }
 .reason__detail {
   padding: 20px;
-  padding-top: 10px;
+  padding-top: 5px;
   line-height: 30px;
 }
-/* .reason__item {
-  margin-left: 22px;
-} */
+.reason__item {
+  padding: 5px;
+}
 
 /* Reason choose this end */
 
@@ -404,7 +408,9 @@ li{
   padding: 15px;
   padding-bottom: 25px;
 }
-
+.message p{
+  padding: 5px 200px
+}
 /* Message from CEO end */
 
 /* Footer template start */
@@ -851,6 +857,7 @@ html {
 .w-3{
   width: 30%;
 }
+
 /* Educate page end */
 
 /* Moz Firefox start */
@@ -858,12 +865,12 @@ html {
   .seminor__button {
     width: -moz-available;
   }
-  .pl-4x{
+  /* .pl-4x{
     padding-left: 300px;
   }
   .pr-1{
     padding-left: 0px;
-  }
+  } */
 }
 /* Moz Firefox end */
 
