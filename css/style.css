@@ -506,6 +506,7 @@ html {
 }
 .seminor__table {
   border-collapse: collapse;
+  
   margin: 50px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
@@ -631,7 +632,7 @@ html {
 .seminor__detail {
   max-width: 750px;
   border: 1px solid var(--gray);
-  padding: 10px;
+  padding: 20px;
   margin: 0 10px;
   box-shadow: 0px 5px 5px 5px grey;
 }
@@ -677,9 +678,9 @@ html {
   background-image: linear-gradient(to top, var(--blue), var(--red));
   color: white;
   padding: 10px;
-  overflow-y: scroll;
-  max-width: 125px;
-  min-height: 200px;
+  overflow-y: auto;
+  max-width: 150px;
+  /* min-height: 200px; */
 }
 
 .seminor__scroll p {
@@ -827,6 +828,19 @@ html {
 .uppercase {
   text-transform: uppercase;
 }
+
+.educate__item-btn{
+  color: var(--blue);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.educate__item-btn:hover{
+  color: var(--blue);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 .item {
   flex: 1 0;
 }
@@ -851,3 +865,61 @@ html {
   }
 }
 /* Moz Firefox end */
+
+/* Responsive start */
+/* The media in 768px  */
+
+@media only screen and (max-width: 768px) {
+    .container{
+      width:100%;
+      margin: 0 auto;
+    }
+    
+
+    .footer{
+      padding: 0 20px;
+    }
+
+    /* Home page start */
+    .nav__menu-link{
+      width: inherit;
+    }
+
+    /* Home page end */
+
+    .seminor__table{
+      margin: 50px 15px;
+    }
+    .seminor__table-staff, .seminor__table-manager , .seminor__table-sales, .seminor__table-worker {
+      padding: 0;
+    }
+    .seminor__scroll{
+      display: none;
+    }
+    .seminor__detail{
+      padding: 20px;
+    }
+    .pl-4x{
+      padding-left: 0;
+    }
+    .pr-1{
+      padding-left: 0;
+    }
+    .toTop{
+      display: none !important;
+    }
+
+    .educate__block{
+      padding: 20px;
+    }
+}
+
+/* Responsive end */
+
+
+
+
+
+
+
+
